@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171716">
+  <meta name="description" content="Saç kesim modellerini dört açıdan inceleyin, size uygun seçenekleri bulun ve berberinize gösterin.">
+  <title>Usta Rehberi — Saç Modelini Seç</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Usta Rehberi ana sayfa">
+      <span class="brand-mark">U</span>
+      <span class="brand-copy"><strong>USTA REHBERİ</strong><small>SAÇ MODELİNİ SEÇ</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Ana menü">
+      <a href="#models">Saç modelleri</a>
+      <a href="#guide">Kendime uygun model</a>
+      <a href="#how-it-works">Nasıl kullanılır?</a>
+    </nav>
+    <a class="header-cta" href="#models">Modelleri keşfet <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> BERBERİNLE AYNI DİLİ KONUŞ</div>
+        <h1 id="hero-title">Aklındaki modeli<br><em>berberine göster.</em></h1>
+        <p>Kesimleri farklı açılardan incele. Sana yakın modeli bul, detaylarına bak ve beğendiğini berberinle paylaş.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#models">Saç modellerini incele <span>↓</span></a>
+          <a class="button button-quiet" href="#guide">Bana uygun modeli bul <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="note-icon">N</span><span>NFC ile açılır · Uygulama indirmek gerekmez</span></div>
+      </div>
+      <div class="hero-art" aria-label="Saç modelleri galerisi görsel alanı">
+        <div class="hero-art-glow"></div>
+        <div class="hero-photo-placeholder">
+          <div class="placeholder-symbol">✂</div>
+          <strong>SAÇ MODELİ GALERİSİ</strong>
+          <span>Fotoğraflar eklendiğinde burada görünür</span>
+        </div>
+        <div class="hero-stamp"><span>4</span><small>AÇIDAN<br>İNCELE</small></div>
+        <div class="hero-caption"><span>01 / MODEL REHBERİ</span><span>KEŞFET · KARŞILAŞTIR · SEÇ</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Site özellikleri">
+      <div><span class="strip-icon">◉</span><span>4 açıdan görsel inceleme</span></div>
+      <div><span class="strip-icon">⌕</span><span>Kolay model filtreleme</span></div>
+      <div><span class="strip-icon">✂</span><span>Berbere gösterilecek kesim tarifi</span></div>
+    </section>
+
+    <section class="catalog-section section-wrap" id="models">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">MODEL KATALOĞU</div>
+          <h2>Tarzını <em>keşfet.</em></h2>
+          <p class="section-intro">Modelleri incele. Fotoğraflar, ekranda görünürken otomatik olarak açı değiştirir.</p>
+        </div>
+        <div class="catalog-count"><strong id="visible-count">04</strong><span>MODEL</span></div>
+      </div>
+
+      <div class="catalog-tools">
+        <label class="search-box" for="model-search"><span aria-hidden="true">⌕</span><input id="model-search" type="search" placeholder="Model veya kesim ara..." autocomplete="off"><kbd>ARA</kbd></label>
+        <div class="filter-chips" role="group" aria-label="Hızlı model filtreleri">
+          <button class="filter-chip is-active" type="button" data-filter="all">Tümü</button>
+          <button class="filter-chip" type="button" data-filter="fade">Fade</button>
+          <button class="filter-chip" type="button" data-filter="short">Kısa saç</button>
+          <button class="filter-chip" type="button" data-filter="easy">Kolay bakım</button>
+        </div>
+      </div>
+
+      <div class="model-grid" id="model-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span>⌕</span><strong>Bu aramayla eşleşen model bulamadık.</strong><p>Başka bir kelime deneyebilir veya tüm modelleri görüntüleyebilirsin.</p>
+        <button class="text-button" type="button" id="clear-search">Tüm modelleri göster →</button>
+      </div>
+    </section>
+
+    <section class="guide-section" id="guide">
+      <div class="section-wrap guide-layout">
+        <div class="guide-intro">
+          <div class="eyebrow eyebrow-light">KARAR VERME REHBERİ</div>
+          <h2>Saçına uygun<br><em>modeli bul.</em></h2>
+          <p>Saç çizgini ve şu anki uzunluğunu seç. Sana fikir verebilecek kesimleri birlikte listeleyelim.</p>
+          <div class="guide-progress"><span class="progress-line"><i id="progress-fill"></i></span><span id="progress-label">1 / 2 ADIM</span></div>
+        </div>
+        <div class="guide-panel">
+          <div class="guide-step is-current" id="guide-step-1">
+            <div class="step-kicker">ADIM 01 <span>SAÇ YAPISI</span></div>
+            <h3>Saç çizgin ve yoğunluğun hangisine daha yakın?</h3>
+            <p class="step-help">Üç numara kesim yaptırdığını düşünerek sana en yakın örneği seç.</p>
+            <div class="profile-options" id="profile-options">
+              <button class="profile-option" type="button" data-profile="dense">
+                <span class="profile-visual profile-dense"><i></i></span><strong>Sık ve dengeli</strong><small>Saç çizgim genel olarak düzenli</small>
+              </button>
+              <button class="profile-option" type="button" data-profile="temples">
+                <span class="profile-visual profile-temples"><i></i></span><strong>Şakaklar açılmış</strong><small>Alın kenarları geriye çekilmiş</small>
+              </button>
+              <button class="profile-option" type="button" data-profile="front">
+                <span class="profile-visual profile-front"><i></i></span><strong>Ön taraf seyrek</strong><small>Alın çevresinde yoğunluk az</small>
+              </button>
+              <button class="profile-option" type="button" data-profile="crown">
+                <span class="profile-visual profile-crown"><i></i></span><strong>Tepe bölgesi seyrek</strong><small>Başın üst/tepe kısmında azalma var</small>
+              </button>
+              <button class="profile-option profile-option-wide" type="button" data-profile="unsure">
+                <span class="unsure-icon">?</span><span><strong>Emin değilim / Birden fazla durum var</strong><small>Genel modellere göz atmak istiyorum</small></span>
+              </button>
+            </div>
+            <div class="step-actions"><span class="selection-hint" id="profile-hint">Devam etmek için bir seçenek belirle.</span><button class="button button-primary" id="to-step-2" type="button" disabled>Devam et <span>→</span></button></div>
+          </div>
+
+          <div class="guide-step" id="guide-step-2" hidden>
+            <div class="step-kicker">ADIM 02 <span>MEVCUT SAÇ UZUNLUĞU</span></div>
+            <h3>Saçın şu anda yaklaşık ne kadar uzun?</h3>
+            <p class="step-help">Üst taraftaki saç tellerinin ortalama uzunluğunu düşünerek seç.</p>
+            <div class="length-options" id="length-options">
+              <button type="button" class="length-option" data-length="1-2"><strong>1–2 <small>cm</small></strong><span>Çok kısa</span></button>
+              <button type="button" class="length-option" data-length="3"><strong>3 <small>cm</small></strong><span>Kısa</span></button>
+              <button type="button" class="length-option" data-length="4-5"><strong>4–5 <small>cm</small></strong><span>Orta-kısa</span></button>
+              <button type="button" class="length-option" data-length="6-8"><strong>6–8 <small>cm</small></strong><span>Orta</span></button>
+              <button type="button" class="length-option length-option-wide" data-length="10+"><strong>10+ <small>cm</small></strong><span>Uzun</span></button>
+            </div>
+            <div class="guide-disclaimer">Bu rehber genel fikir verir; saçın yapısı, yüz şekli ve berberinin değerlendirmesi sonucu değiştirebilir.</div>
+            <div class="step-actions"><button class="button button-quiet" id="back-to-step-1" type="button">← Geri</button><button class="button button-primary" id="show-recommendations" type="button" disabled>Modelleri göster <span>→</span></button></div>
+          </div>
+
+          <div class="guide-step" id="guide-results" hidden>
+            <div class="step-kicker">SANA ÖZEL LİSTE <span>ÖN DEĞERLENDİRME</span></div>
+            <h3>İnceleyebileceğin modeller</h3>
+            <p class="step-help" id="recommendation-summary"></p>
+            <div class="recommendation-group"><div class="recommendation-group-title">ŞİMDİ İNCELEYEBİLİRSİN</div><div class="recommendation-list" id="recommendation-list"></div></div>
+            <div class="recommendation-group" id="grow-group" hidden><div class="recommendation-group-title">BİRAZ UZATTIKTAN SONRA</div><div class="recommendation-list" id="grow-list"></div><p class="grow-note">Bu modeller için üst bölümde biraz daha uzun saç gerekebilir.</p></div>
+            <div class="step-actions"><button class="button button-quiet" id="edit-guide" type="button">← Seçimlerimi değiştir</button><button class="button button-primary" id="all-models-from-guide" type="button">Tüm modellere bak <span>→</span></button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section section-wrap" id="how-it-works">
+      <div class="section-heading how-heading">
+        <div><div class="eyebrow">KULLANIMI ÇOK KOLAY</div><h2>Bak. Beğen. <em>Göster.</em></h2></div>
+      </div>
+      <div class="how-grid">
+        <article class="how-card"><span class="how-number">01</span><div class="how-icon">⌁</div><h3>Telefonunu yaklaştır</h3><p>Masadaki NFC işaretine dokun veya QR kodu okut. Site telefonunda açılır.</p></article>
+        <article class="how-card"><span class="how-number">02</span><div class="how-icon">◫</div><h3>Modeli incele</h3><p>Görselleri dört açıdan gör. Detayları, kesim adını ve bakım bilgisini oku.</p></article>
+        <article class="how-card"><span class="how-number">03</span><div class="how-icon">✂</div><h3>Berberine göster</h3><p>Beğendiğin modeli açıp berberine göster. İstediğin küçük değişiklikleri birlikte konuşun.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="#top"><span class="brand-mark">U</span><span class="brand-copy"><strong>USTA REHBERİ</strong><small>SAÇ MODELİNİ SEÇ</small></span></a><span>Berberinle aynı dili konuş.</span><a href="#top" class="back-top">YUKARI ÇIK ↑</a></footer>
+
+  <div class="modal-backdrop" id="detail-modal" hidden>
+    <section class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+      <button class="modal-close" id="close-detail" type="button" aria-label="Detayları kapat">×</button>
+      <div class="detail-gallery">
+        <div class="detail-main-image" id="detail-main-image-wrap">
+          <img id="detail-main-image" alt="">
+          <div class="image-placeholder detail-placeholder"><span>✂</span><strong>MODEL GÖRSELİ</strong><small>Bu açıya ait fotoğraf henüz eklenmedi.</small></div>
+          <button class="zoom-button" id="zoom-image" type="button" aria-label="Görseli büyüt">⤢</button>
+          <div class="detail-angle-label" id="detail-angle-label">ÖNDEN</div>
+        </div>
+        <div class="angle-picker" id="angle-picker" aria-label="Görüş açısını seç"></div>
+      </div>
+      <div class="detail-copy">
+        <div class="eyebrow">KESİM DETAYI <span class="detail-code" id="detail-code">01 / 04</span></div>
+        <h2 id="detail-title">Low Fade</h2>
+        <p class="detail-subtitle" id="detail-subtitle"></p>
+        <div class="detail-tags" id="detail-tags"></div>
+        <div class="detail-description"><h3>Bu kesim nasıl görünür?</h3><p id="detail-description"></p></div>
+        <div class="barber-quote"><span>BERBERİNE ŞÖYLE SÖYLE</span><p id="detail-barber-text"></p><button id="copy-barber-text" type="button">Cümleyi kopyala <span>▢</span></button></div>
+        <div class="detail-extra"><div><strong>Bakım önerisi</strong><p id="detail-maintenance"></p></div><div><strong>Bilmen gereken</strong><p id="detail-note"></p></div></div>
+      </div>
+    </section>
+  </div>
+
+  <div class="zoom-backdrop" id="zoom-modal" hidden>
+    <button type="button" class="zoom-close" id="close-zoom" aria-label="Büyütülmüş görseli kapat">×</button>
+    <button type="button" class="zoom-nav zoom-prev" id="zoom-prev" aria-label="Önceki açı">‹</button>
+    <img id="zoomed-image" alt="Büyütülmüş saç modeli görünümü">
+    <button type="button" class="zoom-nav zoom-next" id="zoom-next" aria-label="Sonraki açı">›</button>
+    <span class="zoom-caption" id="zoom-caption"></span>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
